@@ -30,7 +30,7 @@ export function Home() {
           <ListPokemons />
         </div>
 
-        <div className="mt-14 flex items-center justify-center">
+        <div className="mt-8 flex items-center justify-center">
           <Pagination
             page={page + 1}
             totalPages={totalPages}

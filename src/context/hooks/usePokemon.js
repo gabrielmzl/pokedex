@@ -8,7 +8,7 @@ export default function usePokemon() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [page, setPage] = useState(0);
   
-  const itensPerPage = 12
+  const itensPerPage = 9
   const offset = itensPerPage * page
 
   async function getPokemon({ id }) {

@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight } from "phosphor-react";
 
 export function Pagination({ page, totalPages, onLeftClick, onRightClick }) {
   return (
-    <div className="flex items-center mb-8">
+    <div className="flex items-center">
       <button
         className="bg-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         onClick={onLeftClick}
