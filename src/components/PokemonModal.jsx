@@ -112,7 +112,7 @@ export function PokemonModal() {
   const { pokemon, modalIsOpen, setModalIsOpen } = useContext(PokemonContext);
 
   return modalIsOpen ? (
-    <div className={styles[pokemon.types[0].type.name].background + " absolute top-0 right-0 h-full p-9 shadow-2xl w-[500px] overflow-y-scroll scrollbar scrollbar-thumb-text-primary scrollbar-track-text-secondary"}>
+    <div className={styles[pokemon.types[0].type.name].background + " absolute top-0 right-0 h-[100vh] p-9 shadow-2xl w-[500px] overflow-y-scroll scrollbar scrollbar-thumb-text-primary scrollbar-track-text-secondary"}>
       <X
         size={32}
         color="#000"

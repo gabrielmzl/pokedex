@@ -155,9 +155,6 @@ module.exports = {
         },
         'primary': '#F6F8FC',
         'text-gray': '#8F9396',
-        'text-gray-dark': '#7D7F80',
-        'text-red': '#FF5350',
-        'dark-blue': '#000E45',
         'blue': '#2459CC',
       },
       boxShadow: {
