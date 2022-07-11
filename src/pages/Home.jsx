@@ -1,6 +1,5 @@
 import { Background } from "../components/Background";
 import { ListPokemons } from "../components/ListPokemons";
-import { Header } from "../components/Header";
 import { PokemonModal } from "../components/PokemonModal";
 import { Pagination } from "../components/Pagination";
 import { useContext } from "react";
@@ -22,15 +21,14 @@ export function Home() {
   }
   return (
     <>
-      <div className="relative flex flex-col items-stretch py-8 px-20">
+      <div className="relative flex flex-col items-stretch px-20">
         <Background />
-        <Header />
 
         <div className="grid gap-14 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 flex-1 mt-10">
           <ListPokemons />
         </div>
 
-        <div className="mt-8 flex items-center justify-center">
+        <div className="mt-8 mb-2 flex items-center justify-center">
           <Pagination
             page={page + 1}
             totalPages={totalPages}

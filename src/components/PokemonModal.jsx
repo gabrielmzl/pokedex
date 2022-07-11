@@ -1,4 +1,4 @@
-import { X } from "phosphor-react";
+import { X, Heart } from "phosphor-react";
 import { useContext } from "react";
 import { PokemonContext } from "../context/PokemonContext";
 
@@ -151,7 +151,7 @@ export function PokemonModal() {
           <div className="flex items-center mt-4 gap-3">
             {pokemon.abilities.map(ability => {
               return (
-                <span className="text-xl text-white capitalize">
+                <span key={ability.ability.name} className="text-xl text-white capitalize">
                   {ability.ability.name}
                 </span>
               );
@@ -196,7 +196,7 @@ export function PokemonModal() {
           </span>
           {pokemon.stats.map(stat => {
             return (
-              <div className="flex mt-6 bg-[#00000008] p-3 w-[300px] rounded-full justify-between items-center">
+              <div key={stat.stat.name} className="flex mt-6 bg-[#00000008] p-3 w-[300px] rounded-full justify-between items-center">
                 <span className={styles[stat.stat.name].background + " text-white rounded-full p-2 text-xl"}>
                   {styles[stat.stat.name].abbreviation}
                 </span>
@@ -206,6 +206,14 @@ export function PokemonModal() {
               </div>
             );
           })}
+        </div>
+
+        <div className="flex flex-col items-center mt-8">
+          <button
+            className="flex items-center gap-4 text-white bg-pokemons-psychic-button-bg py-4 px-8 rounded hover:rounded-lg transition-all shadow-shadow"
+          >
+            <Heart size={24} color="#fff" /> Add to Favorites
+          </button>
         </div>
       </div>
     </div >

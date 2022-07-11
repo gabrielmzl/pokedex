@@ -83,7 +83,7 @@ export function CardPokemon({ image, name, id, types }) {
 
   async function gPokemon() {
     await getPokemon({ id })
-    
+
     setModalIsOpen(true)
   }
 
@@ -112,6 +112,7 @@ export function CardPokemon({ image, name, id, types }) {
             );
           })}
         </div>
+
 
         <BackgroundCard />
       </div>

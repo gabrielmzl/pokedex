@@ -6,6 +6,7 @@ export default function usePokemon() {
   const [totalPages, setTotalPages] = useState();
   const [pokeDados, setPokeDados] = useState([])
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [favoritePokemon, setFavoritePokemon] = useState();
   const [page, setPage] = useState(0);
   
   const itensPerPage = 9
